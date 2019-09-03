@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry location="lib/mysql-connector-java-5.1.26.jar" />
+	<context id="parking-client">
+		<plugin
+			type="org.chinadovey.tools.mybatis.generator.MySQLPaginationPlugin2" />
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://service.huaching.com:3306/ruian_data?characterEncoding=UTF-8"
+			userId="power" password="power" />
+		<javaModelGenerator targetPackage="com.chinadovey.power.webapps.pojo"
+			targetProject="src/main/java" />
+		<sqlMapGenerator targetPackage="com.chinadovey.power.webapps.mappers.gen"
+			targetProject="src/main/resources" />
+		<javaClientGenerator targetPackage="com.chinadovey.power.webapps.mappers.gen"
+			targetProject="src/main/java" type="XMLMAPPER" />
+		<!-- <table tableName="power_cdmeterdata_realtime" domainObjectName="PowerCdmeterdataRealtime" />
+		<table tableName="power_cdmeterdata_realtime_s" domainObjectName="PowerCdmeterdataRealtimeSingle" />
+		<table tableName="power_cdmeterdata_total" domainObjectName="PowerCdmeterdataTotal" />
+		<table tableName="power_cdmeterdata_total_s" domainObjectName="PowerCdmeterdataTotalSingle" /> -->
+		
+		<table tableName="power_cache_data" domainObjectName="CdmeterCacheData" />
+		
+		
+		
+	</context>
+</generatorConfiguration>
