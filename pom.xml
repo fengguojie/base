@@ -532,14 +532,14 @@
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-mongodb</artifactId>
-			<version>1.4.1.RELEASE</version>
+			<version>3.3.5</version>
 		</dependency>
 		
 		<!-- mongoDB -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-mongodb</artifactId>
-			<version>1.4.1.RELEASE</version>
+			<version>3.3.5</version>
 		</dependency> 
 		<dependency>
 			<groupId>com.chinadovey</groupId>
